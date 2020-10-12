@@ -60,4 +60,5 @@
         <module>product-view-service-ribbon</module>
         <module>product-view-service-feign</module>
     </modules>
+
 </project>
