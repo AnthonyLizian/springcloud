@@ -1,0 +1,20 @@
+eureka:
+  client:
+    serviceUrl:
+#      eureka 地址
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+#    微服务名:product-view-service-feign
+    name: product-view-service-feign
+  zipkin:
+#    zipkin 地址
+    base-url: http://localhost:9411
+#    thymeleaf
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: HTML5
