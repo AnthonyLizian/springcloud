@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Bean;
 
 //springboot
 @SpringBootApplication
-//eureka客户端注解
+//eureka客户端
 @EnableEurekaClient
 //用于发现eureka的微服务
 @EnableDiscoveryClient

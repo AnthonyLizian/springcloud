@@ -6,8 +6,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 import cn.hutool.core.util.NetUtil;
 
-
+//SpringBoot
 @SpringBootApplication
+//Eureka服务
 @EnableEurekaServer
 public class EurekaServerApplication {
 

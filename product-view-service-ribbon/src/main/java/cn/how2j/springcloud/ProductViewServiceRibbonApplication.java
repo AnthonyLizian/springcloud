@@ -19,9 +19,9 @@ import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.NumberUtil;
 
-//springboot注解
+//springboot
 @SpringBootApplication
-//eureka客户端注解
+//eureka客户端
 @EnableEurekaClient
 //用于发现eureka的微服务
 @EnableDiscoveryClient

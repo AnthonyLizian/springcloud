@@ -54,7 +54,7 @@ public class ProductDataServiceApplication {
 
         new SpringApplicationBuilder(ProductDataServiceApplication.class).properties("server.port=" + port).run(args);
     }
-    //持续抽样
+    //服务链路追踪 持续抽样
     @Bean
     public Sampler defaultSampler() {
         return Sampler.ALWAYS_SAMPLE;
