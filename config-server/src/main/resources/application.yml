@@ -3,10 +3,10 @@ spring:
     name: config-server #微服务名:config-server
   cloud:
     config:
-      label: master #分支:主分支
+      label: master #分支：master
       server:
         git:
-          uri: https://github.com/how2j/springcloudConfig/  #git地址
+          uri: https://github.com/AnthonyLizian/springcloudConfig/  #git地址
           searchPaths: respo  #目录
 eureka:
   client:

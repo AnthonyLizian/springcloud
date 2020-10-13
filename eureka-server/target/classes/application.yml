@@ -1,16 +1,11 @@
-#    声明这个微服务的名称是eureka-server
 spring:
   application:
-    name: eureka-server
-#    主机名
+    name: eureka-server #微服务名:eureka-server
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost #主机名
   client:
-#    是否注册到eureka服务端  本身就是服务端  就不需要注册了
-    registerWithEureka: false
-#    是否获取服务端的注册信息  本身就是服务端  就不需要注册了
-    fetchRegistry: false
-#      默认eureka服务端地址 http://localhost:8761/eureka/
+    registerWithEureka: false #是否注册到eureka服务端  本身就是服务端  就不需要注册了
+    fetchRegistry: false  #是否获取服务端的注册信息  本身就是服务端  就不需要注册了
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #默认eureka服务端地址 http://localhost:8761/eureka/
