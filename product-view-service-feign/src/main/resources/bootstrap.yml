@@ -6,7 +6,7 @@ spring:
       discovery:
         enabled:  true
         serviceId:  config-server #配置服务器在 eureka server 里的服务名称，用于定位 config-server
-#    but总线配置
+#   bus总线配置
     bus:
       enabled: true
       trace:

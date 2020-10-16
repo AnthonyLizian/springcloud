@@ -16,10 +16,13 @@ import cn.hutool.core.util.NetUtil;
 import cn.hutool.core.util.NumberUtil;
 import org.springframework.context.annotation.Bean;
 
+//SpringBoot
 @SpringBootApplication
+//Eureka客户端
 @EnableEurekaClient
 public class ProductDataServiceApplication {
     public static void main(String[] args) {
+        //ProductDataService端口号：8001（5秒默认）
         int port = 0;
         int defaultPort = 8001;
         Future<Integer> future = ThreadUtil.execAsync(() ->{

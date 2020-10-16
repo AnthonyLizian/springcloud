@@ -10,14 +10,15 @@ import cn.hutool.core.util.NetUtil;
 
 //SpringBoot
 @SpringBootApplication
-//配置服务器
-@EnableConfigServer
-//用于发现eureka的微服务
-@EnableDiscoveryClient
 //Eureka客户端
 @EnableEurekaClient
+//用于发现eureka的微服务
+@EnableDiscoveryClient
+//配置服务器
+@EnableConfigServer
 public class ConfigServerApplication {
     public static void main(String[] args) {
+        //ConfigServer端口号：8030
         int port = 8030;
         if(!NetUtil.isUsableLocalPort(port)) {
             System.err.printf("端口%d被占用了，无法启动%n", port );

@@ -1,6 +1,8 @@
 spring:
   application:
     name:  product-view-service-feign  #微服务名:product-view-service-feign
+  zipkin:
+    base-url: http://localhost:9411 #zipkin 地址
 #  thymeleaf配置
   thymeleaf:
     cache: false
@@ -9,8 +11,7 @@ spring:
     encoding: UTF-8
     content-type: text/html
     mode: HTML5
-  zipkin:
-    base-url: http://localhost:9411 #zipkin 地址
+
 
 #这样才能访问 /actuator/bus-refresh
 management:
